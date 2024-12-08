@@ -1,0 +1,116 @@
+/* Header */
+.b1{
+    text-decoration: none;
+    background-color: #ffffff;
+    margin-left: 10px;
+    padding: 10px;
+}
+.b1 i {
+    font-size: 20px; 
+    transform: scaleX(1.2);
+}
+
+.b1:hover {
+    cursor: pointer;
+    background-color: rgba(206, 202, 202, 0.429);
+    border-radius: 30px;
+    color: black; 
+}
+
+.fa-bars{
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+.fa-youtube{
+    font-size:30px;
+    text-decoration: none;
+    color: red;
+    
+}
+.b2 {
+    text-decoration: none;
+    background-color: #ffffff;
+    position: relative;
+    left: 8px;
+    top: 4px;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.1ch;
+}
+
+.b2 i {
+    font-size: 28px;
+}
+
+.b2:hover {
+    cursor: pointer;
+}
+
+.b2 .in {
+    position: relative; 
+    top: -8px;
+}
+
+.search-container {
+    position: relative;
+    left: 300px;
+    display: inline;
+    z-index: 1;
+    top: 1px;
+}
+.button_search{
+    display: none;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+    color: #b7b7b7;
+
+}
+
+.search-input {
+    width: 550px; 
+    height: 40px;
+    padding: 0 15px;
+    padding-left: 30px; 
+    font-size: 16px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
+    outline: none; 
+    transition: all 0.3s; 
+}
+
+.search-input:focus {
+    width: 600;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+    display: inline;
+}
+
+
+
+
+
+
+.search-button {
+    background-color: rgb(223, 219, 219) ;
+    position: absolute;
+    padding: 10px;
+    right: 1px;
+    border: none;
+    border-top-right-radius: 20px; /* Top-left corner */
+    border-bottom-right-radius: 20px; /* Top-left corner */
+    /* border-top-right-radius: 15px; */
+    color: #333;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-button:hover {
+    background-color: #f1f1f1; /* Slight background on hover */
+}
+
+.search-button:focus {
+    outline: none; /* Remove outline on focus for the button */
+}
