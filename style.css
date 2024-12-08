@@ -1,4 +1,8 @@
 /* Header */
+.header{
+    position:fixed;
+    top: 0;
+}
 .b1{
     text-decoration: none;
     background-color: #ffffff;
@@ -94,6 +98,7 @@
 
 
 .search-button {
+    width: 50px;
     background-color: rgb(223, 219, 219) ;
     position: absolute;
     padding: 10px;
@@ -114,3 +119,96 @@
 .search-button:focus {
     outline: none; /* Remove outline on focus for the button */
 }
+
+.speak {
+    position: absolute;
+    top: 10px;
+    left: 1075px;
+}
+
+.voice {
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px;
+    border: 0; /* Remove border completely */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: #eeeeee;
+    align-items: center;
+    cursor: pointer; /* Add pointer for interactivity */
+}
+.voice:hover {
+    background-color: #b0b0b0; /* Reduced background color on hover */
+}
+.fa-microphone {
+    font-size: 20px;
+    color: #000; /* Adjust color if necessary */
+}
+.create_v {
+    position: absolute;
+    top: 10px;
+    left: 1340px;
+}
+
+.create {
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px;
+    border: 0; /* Remove border completely */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: white;
+    align-items: center;
+    cursor: pointer; /* Add pointer for interactivity */
+}
+.create:hover {
+    background-color: #b0b0b0; /* Reduced background color on hover */
+}
+.fa-square-plus {
+    font-size: 20px;
+    color: #ffffff;
+    color: #000000; /* Adjust color if necessary */
+}
+.bell {
+    position: absolute;
+    top: 10px;
+    left: 1400px;
+}
+
+.bel {
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px;
+    border: 0; /* Remove border completely */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: white;
+    align-items: center;
+    cursor: pointer; /* Add pointer for interactivity */
+}
+.bel:hover {
+    background-color: #b0b0b0; /* Reduced background color on hover */
+}
+.fa-bell{
+    font-size: 20px;
+    color: #ffffff;
+    color: #000000; /* Adjust color if necessary */
+}
+.pro {
+    position: absolute;
+    top: 10px;
+    left: 1460px;
+}
+
+.pro {
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px;
+    border: 0; /* Remove border completely */
+    border-radius: 50%; /* Makes the element circular */
+    background-color: white;
+    align-items: center;
+    cursor: pointer; /* Add pointer for interactivity */
+}
+.pro:hover {
+    background-color: #b0b0b0; /* Reduced background color on hover */
+}
+.fa-user{
+    font-size: 20px;
+    color: #ffffff;
+    color: #000000; /* Adjust color if necessary */
+}
+

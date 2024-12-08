@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+  <style>
+    /* Navbar inside iframe */
+    nav{
+        margin-left: -30px;
+    }
+    li{
+        list-style: none;
+        margin-top: 17px;
+
+    }
+    
+    
+    button{
+        text-decoration: none;
+        background-color: #ffffff;
+        border:none;
+        cursor: pointer;
+    }
+    
+    button img{
+        display: inline;
+        /* margin-top: 10px; */
+    }
+    
+    button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    color: black; }
+    /*
+    button i {
+        font-size: 16px; 
+        margin-right: 8px; 
+    }
+    
+
+
+    
+    
+}
+     */
+     .video-container {
+      position: relative;
+      width: 320px; 
+      height: 180px;
+      padding: 30px;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 100%;
+      background: url('thumb/2.jpg') ;
+      background-size: cover;
+      cursor: pointer;
+      border-radius: 5%;
+    }
+    .thumbnail1 {
+      width: 100%;
+      height: 100%;
+      background: url('thumb/1.jpg') ;
+      background-size: cover;
+      cursor: pointer;
+      border-radius: 5%;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .video-container:hover video {
+      display: block;
+    }
+
+    .video-container:hover .thumbnail {
+      display: none;
+    }
+    td{
+        padding-right: 20px;
+    }
+    .fa-circle-play{
+        color: #5d1313;
+        font-size: 20px;
+        margin-left: -150px;
+    }
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        height: 65px; /* Adjust as needed */
+    }
+    .iframe-container iframe {
+        width: 70%;
+        height: 100%;
+        border: none;
+    }
+    .one{
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+    
+
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <tr>
+                    <td colspan="3">
+                        <div class="one" >
+                            <iframe class="one" src="hornav1.html" width="100%" height="65" style="border:none;"></iframe>
+                        </div>
+                    </td>
+                </tr>
+            </li>
+            <li>
+                <button>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="1.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="2.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="3.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hey Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Wow Copyright<br>
+                                <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Beautiful Copyright<br>
+                                <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                        </tr>
+                    </table>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="2.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="3.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="1.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Wow Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Beautiful Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hey Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+                        </tr>
+                    </table>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="3.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="1.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="2.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Beautiful Copyright<br>
+                                <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hey Copyright<br>
+                                <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Wow Copyright<br>
+                                <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                        </tr>
+                    </table>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="1.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail"></div>
+                                    <video autoplay loop muted>
+                                      <source src="2.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="video-container">
+                                    <div class="thumbnail1"></div>
+                                    <video autoplay loop muted>
+                                      <source src="3.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Hey Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Wow Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                            <td class="down"><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Beautiful Copyright<br>
+                             <font color="grey" size="2" style="margin-left: -105px;">ChessBase India</font><br><font color="grey" size="2" style="margin-left: -80px;">16K views .1 hour ago</font>    
+                            </td>
+
+                        </tr>
+                    </table>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
